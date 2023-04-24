@@ -28,7 +28,7 @@ export default memo(() => {
 			console.log('form 值', form_value);
 			(async () => {
 				const data = await axios.post(
-					`http://2c2g.akasaki.space:8889/get_key`,
+					`https://mqtt-flask.vercel.app/get_key`,
 					{
 						theme: form_value.topic,
 					},
